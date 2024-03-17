@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Minion</title>
+	<style>
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: white;
+	color: black;
+	margin:auto;
+	background-color: white;
+}
+.minion1{
+	margin: 10px 20px;
+	text-align: center;
+	border-radius: 12px;
+	padding: 30px 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+	cursor: default;
+}
+.min1{
+	float:left;
+	background-color:Yellow;
+	width:30%;
+	padding: 0 20px;
+	padding:8px;
+	margin-top:7px;
+	display:block;
+	color:black;
+}
+.minion2{
+	margin: 10px 20px;
+	text-align: center;
+	border-radius: 12px;
+	padding: 30px 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+	cursor: default;
+}
+.min2{
+	float:left;
+	background-color:Yellow;
+	width:30%;
+	padding: 0 20px;
+		padding:8px;
+	display:block;
+	color:black;
+}
+@media only screen and (max-width:620px)
+{
+	/*For Mobile:*/
+	.menu, .main, .right{
+		width:100%
+	}
+}
+</style>
+<script src="jquery-3.7.1.js"></script>
+<script>
+$(document).ready(function()
+{
+	$("body").on("contextmenu",function()
+	//$("body").bind("contextmenu",function()
+	{
+		alert("aapne aap karo");
+		return false;
+	});
+});
+</script>
+</head>
+<body style="font-family:verdana;color:#040348;
+background-image: url(mm1.jpg);
+background-position: center;
+background-size: cover;">
+    <div class="container">
+       <center> <h1 style="color:blue;">Who's Your Favorite Minion?</h1></center>
+       <!-- <ul class="minion-list">-->
+			<a href="Stuart.html"><img class="minion1" src="stuart.jpg" height="350px" ></img></a>
+			<a href="Kevin.html"><img class="minion1" src="KEVIN.png" height="350px"></img></a>
+			<a href="Bob.html"><img class="minion1" src="bob.png" height="350px"></img></a>
+		  <!--<li  class="min1">Stuart</li>
+		   <li class="min1">Kevin</li>
+		   <li class="min1">Bob</li>-->
+			<a href="Dave.html"><img class="minion2" src="Dave.png" height="350px" width="310"></img></a>
+			<a href="Tim.html"><img class="minion2" src="Tim.png" height="350px" width="310"></img></a>
+			<a href="Carl.html"><img class="minion2" src="Carl.png" height="350px"></img></a>
+		 <!-- <li class="min2">Dave</li>
+		   <li class="min2">Tim</li>
+		   <li class="min2">Carl</li>-->
+		<center> <h3><a href="index.html"><b>BACK</b></a></h3></center>
+    </div>
+</body>
+</html>

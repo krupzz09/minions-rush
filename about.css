@@ -1,0 +1,55 @@
+.minion-container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.minion {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 200px;
+	height: 200px;
+	background: yellow;
+	border-radius: 50% 50% 50% 0;
+}
+
+.eye {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: black;
+	border-radius: 50%;
+}
+.left {
+	top: -60px;
+	left: 60px;
+}
+
+.right {
+	top: -60px;
+	right: 60px;
+}
+
+.mouth {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: black;
+	border-radius: 0 0 50% 50%;
+}
+
+.about-us {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	margin-top: 50px;
+}

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Landing Page</title>
+	<script>
+	function openNavbar() {
+	document.getElementById("sideNavigationBar")
+		.style.width = "50%";
+}
+function closeNavbar() {
+	document.getElementById("sideNavigationBar")
+		.style.width = "0%";
+}
+
+	</script>
+<script src="jquery-3.7.1.js"></script>
+<script>
+$(document).ready(function()
+{
+	$("body").on("contextmenu",function()
+	//$("body").bind("contextmenu",function()
+	{
+		alert("aapne aap karo");
+		return false;
+	});
+});
+</script><style>* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: white;
+	color: black;
+	font-family: "Fira Sans", sans-serif;
+	background-color: white;
+}
+
+nav {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 5%;
+	background-color:#fae26a;
+}
+
+nav .heading {
+	font-size: 30px;
+	font-weight: 700;
+	color: white;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav ul li {
+	padding: 8px 15px;
+	border-radius: 10px;
+	transition: 0.2s ease-in;
+}
+
+nav ul li a {
+	color: black;
+	font-size: 20px;
+	font-weight: 500;
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li:hover {
+	background-color: green;
+}
+
+nav ul li a:hover {
+	color: white;
+}
+
+nav .sideMenuButton {
+	font-size: 30px;
+	font-weight: bolder;
+	cursor: pointer;
+	display: none;
+}
+
+/* responsive navbar css */
+@media screen and (max-width: 600px) {
+	nav .sideMenuButton {
+		display: flex;
+	}
+
+	nav .navbar {
+		display: none;
+	}
+
+	.sideNavigationBar {
+		display: block !important;
+	}
+}
+
+.sideNavigationBar {
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0%;
+	background-color: green;
+	overflow-x: hidden;
+	transition: 0.3s ease-in;
+	padding-top: 60px;
+	display: none;
+}
+
+.sideNavigationBar a {
+	padding: 8px 8px 8px 40px;
+	display: block;
+	font-size: 25px;
+	font-weight: 500;
+	color: #d1d1d1;
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+.sideNavigationBar a button {
+	padding: 10px 20px;
+	border-radius: 10px;
+	color: green;
+	font-size: 16px;
+	border-style: none;
+	font-weight: 700;
+}
+
+.sideNavigationBar a:hover {
+	color: white;
+}
+
+.sideNavigationBar .closeButton {
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 20px;
+	margin-left: 50px;
+}
+
+.line {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2% 5%;
+}
+
+.line .side1 {
+	padding-right: 50px;
+}
+
+.side1 h1 {
+	font-size: 60px;
+	margin-bottom: 10px;
+	color: green;
+}
+
+.side1 button {
+	width: 200px;
+	padding: 12px 20px;
+	border-radius: 20px;
+	border-style:none;
+	color: black;
+	font-size: 17px;
+	font-weight: 600;
+	float:center;
+
+	text-align:center;
+	background-color:yellow;
+	
+
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* Header content responsive */
+@media screen and (max-width: 980px) {
+	.side2 img {
+		width: 350px;
+	}
+
+	.side1 h1 {
+		font-size: 40px;
+	}
+
+	.side1 p {
+		font-size: 17px;
+	}
+
+	.line {
+		margin-top: 80px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.side1 h1 {
+		font-size: 35px;
+	}
+
+	.line {
+		flex-direction: column;
+	}
+
+	.line .side1 {
+		padding: 30px;
+	}
+}
+
+/* section */
+
+section .topic a {
+	font-size: 25px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.about .boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.about .boxes .box {
+	margin: 10px 20px;
+	max-width: calc(100% / 3 - 50px);
+	text-align: center;
+	border-radius: 12px;
+	padding: 30px 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+	cursor: default;
+}
+
+/* Contact Page */
+
+.contact {
+	padding: 20px;
+}
+
+.contact .content {
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+.content .title {
+	width: 80%;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 40px;
+}
+.contactMenu {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.input2 {
+	margin-top: 10;
+}
+
+.label1 {
+	font-size: 18px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-weight: bolder;
+}
+
+.contactMenu .input1 input {
+	border-radius: 13px;
+	padding: 6px;
+}
+
+.input2 input {
+	border-color: rgb(252, 244, 244);
+	width: 400px;
+}
+
+.button {
+	margin-top: 12px;
+	margin-left: 5px;
+}
+
+.button button {
+	width: 162px;
+	height: 35px;
+	border-radius: 12px;
+	border-color: transparent;
+}
+
+.button button:hover {
+	background-color: #8cc099;
+}
+
+button {
+	width: 162px;
+	height: 35px;
+	border-radius: 12px;
+	border-color: transparent;
+}
+
+button:hover {
+	background-color: #8cc099;
+}
+
+.rightside1 {
+	display: flex;
+	flex-direction: column;
+	margin-left: 300px;
+}
+
+.title1 {
+	font-size: 18px;
+	margin-top: 8px;
+	margin-bottom: 5px;
+	font-weight: bolder;
+}
+
+.content1 {
+	width: 450px;
+	margin-top: 2px;
+	color: grey;
+}
+
+/* Footer */
+footer {
+	background: var(--primary-color);
+	padding: 15px 0;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+}
+
+footer .footer span {
+	font-size: 17px;
+	font-weight: 400;
+	color: var(--white-color);
+}
+
+footer .footer span a {
+	font-weight: 500;
+	color: var(--white-color);
+}
+
+footer .footer span a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 1060px) {
+	.contactMenu {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.rightside1 {
+		display: flex;
+		flex-direction: column;
+		margin-left: 0px;
+	}
+
+	.content1 {
+		width: 100%;
+		margin-top: 2px;
+		color: grey;
+	}
+
+	.side2 img {
+		width: 95%;
+		height: 90%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.side2 img {
+		width: 100%;
+	}
+
+	section .topic a {
+		font-size: 20px;
+	}
+
+	section .topic p {
+		font-size: 5px;
+	}
+
+	.about .boxes {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.about .boxes .box {
+		max-width: 70%;
+	}
+	
+}</style>
+
+
+
+</head>
+
+<body style="font-family:verdana;color:#040348;
+background-image: url(mm1.jpg);
+background-position: center;
+background-size: cover;">
+	<nav>
+		<div class="heading"><H1>♡Minions Rush♡</div>
+		<span class="sideMenuButton"
+			onclick="openNavbar()">
+			☰
+		</span>
+
+		<div class="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="sign up.html">Sign Up</a></li>
+				<li><a href="buy.html">Buy</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Side navigation bar for 
+		responsive website -->
+	<div class="sideNavigationBar"
+		id="sideNavigationBar">
+		<a href="#" class="closeButton"
+			onclick="closeNavbar()">
+			
+		</a>
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Sign Up</a>
+		<a href="#">Buy</a>
+	</div>
+
+	<!-- Content -->
+	<div class="line" id="Home">
+		<div class="side1">
+			<img src="REMOVEABLE.png" />
+			<div class="menu">
+			<button>
+				<a href=
+"mainn.html">
+					Explore More
+				</a>
+			</button>
+			</div>
+		</div>
+		<div class="side2">
+			<img src="mm.jpg" width="500">
+		</div>
+	</div>
+
+	<section class="about" id="My Projects">
+		<div class="content">
+			<div class="boxes">
+				<div class="box">
+					<div class="topic">
+						<a href="" target="_blank">
+							<b>GRU</b>
+						</a>
+					</div>
+					<p>
+						Felonius Gru, Sr., also known as just Gru, was born on May 25, 1965. 
+						He is the primary character in the Despicable Me franchise and 
+						the son of Marlena Gru and the late Robert Gru. He is also the grandson
+						of Madeleine Gru and the late Henry Gru, as well as the late John Gru. 
+						He is the spouse of AVL agent Lucy Wilde and a former supervillain.
+						Margaret, Edith, and Agnes are his three adopted daughters.
+						In addition to being the twin brother of Dru Gru,
+						Gru is also the leader of the Minions and buddies with Dr. Nefario.
+					</p>
+				</div>
+				<div class="box">
+
+					<div class="topic">
+						<a href="" target="_blank">
+							<b>Minion</b>
+						</a>
+					</div>
+					<p>
+						The Minions are small, yellow capsule-shaped creatures with round gray goggles, 
+						depicted as being roughly one-third to one-half the height of humans. 
+						They are known for their loyalty and dedication to their evil boss, Gru,
+						in the Despicable Me franchise. The Minions are also known for their gibberish 
+						language and their love for bananas.
+						In the Minions film, an 11-year-old Gru plans to become a supervillain with the help of his Minions, 
+						which leads to a showdown with a malevolent team, the Vicious 6. The plot of the film follows three Minions as 
+						they search for a new evil boss to rule their species.
+					</p>
+				</div>
+
+				<div class="box">
+					<div class="topic">
+					<img src="tenor.gif" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer section -->
+	
+   
+        </body>
+   </html>
+	<footer>
+		<div class="footer">
+			<span>
+			<div style="text-align:center;padding:10px;margin-top:7px;">
+	©copyright https://Minions.ac.in</div>
+				Created By
+				<a href="https://www.instagram.com/krupzz_0920/?hl=en"
+					target="_blank">
+					<B>KRUPA PANCHAL</B>
+				</a>
+			</span>
+		</div>
+	</footer></p>
+</body>
+
+</html>

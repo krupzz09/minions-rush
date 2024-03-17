@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up Page</title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<script src="jquery-3.7.1.js"></script>
+<script>
+$(document).ready(function()
+{
+	$("body").on("contextmenu",function()
+	//$("body").bind("contextmenu",function()
+	{
+		alert("aapne aap karo");
+		return false;
+	});
+});
+</script>
+</head>
+<body style="font-family:verdana;color:#040348;
+background-image: url(mm1.jpg);
+background-position: center;
+background-size: cover;"s>
+	<div class="container">
+		<h2>Sign Up</h2>
+		<form action="/submit_signup" method="post">
+			<label for="email">Email:</label>
+			<input type="email" name="email" required>
+			<label for="username">Username:</label>
+		<input type="text" name="username" required>
+			<label for="password">Password:</label>
+			<input type="password" name="password" required>
+			<button type="submit">Sign Up</button>
+		</form>
+		<p>Already have an account? <a href="index.html">Log in</a></p>
+	</div><center><h3><a href="index.html"><b>BACK</b></a></h3></center
+</body>
+</html>

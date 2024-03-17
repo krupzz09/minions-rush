@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Login Page</title>
+	<script src="jquery-3.7.1.js"></script>
+<script>
+$(document).ready(function()
+{
+	$("body").on("contextmenu",function()
+	//$("body").bind("contextmenu",function()
+	{
+		alert("aapne aap karo");
+		return false;
+	});
+});
+</script>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+		}
+		form {
+			background-image: url(mm1.jpg);
+			background-position: center;
+			background-size: cover;
+			padding: 40px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+			width: 300px;
+			text-align: center;
+		}
+		h1 {
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		input[type="email"], input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		.forget-password {
+			text-align: center;
+			margin-top: 20px;
+			font-size: 0.8em;
+		}
+		.register {
+			text-align: center;
+			margin-top: 20px;
+			font-size: 0.8em;
+			text-decoration: none;
+			color: #4CAF50;
+		}
+	</style>
+</head>
+<body style="font-family:verdana;color:#040348;
+background-image: url(mm1.jpg);
+background-position: center;
+background-size: cover;">
+	<form>
+		<h1>Welcome Back!</h1>
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email">
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password">
+		<input type="submit" value="Log In">
+		<div class="forget-password">
+			<a href="#">Forget Password?</a>
+		</div>
+		<div class="register">
+			Don't have an account? <a href="#">Register</a>
+		</div>
+	</form><center><h3><a href="index.html"><b>BACK</b></a></h3></center
+</body>
+</html>
